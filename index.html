@@ -146,16 +146,6 @@ etherpad: https://etherpad.mozilla.org/2015-07-13-amos
   </div>
 </div>
 
-<!--
-  Display the Etherpad for the workshop.  You will probably set this
-  up on the first day, so make sure you push changes to GitHub after
-  you have its URL.  To create an Etherpad, go to
-
-      http://etherpad.mozilla.org/YYYY-MM-DD-site
-
-  where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
-  '2015-06-10-esu'.
--->
 {% if page.etherpad %}
 <p>
   <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
@@ -166,21 +156,6 @@ etherpad: https://etherpad.mozilla.org/2015-07-13-amos
 
 <hr/>
 
-<!--
-  Show what topics will be covered.
-
-  1. If your workshop is R rather than Python, remove the comment
-     around that section and put a comment around the Python section.
-  2. Some workshops will delete SQL.
-  3. Please make sure the list of topics is synchronized with what you
-     intend to teach.
-  4. You may need to move the div's with class="span6" around inside
-     the div's with class="row-fluid" to balance the multi-column layout.
-
-  This is one of the places where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
 <h2>Syllabus</h2>
 
 <div class="row-fluid">
@@ -209,19 +184,6 @@ etherpad: https://etherpad.mozilla.org/2015-07-13-amos
       <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
     </ul>
   </div>
-  <!-- 
-  <div class="span6">
-    <h3>Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/06-R.html">Reference...</a></li>
-    </ul>
-  </div>
-  -->
 </div>
 
 <div class="row-fluid">
@@ -240,17 +202,13 @@ etherpad: https://etherpad.mozilla.org/2015-07-13-amos
     </ul>
   </div>
   <div class="span6">
-    <h3>Managing Data with SQL</h3>
+    <h3>Data Management in the AMOS Sciences</h3>
     <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Reference...</a></li>
+      <li>Creating a Data Reference Syntax</li>
+      <li>netCDF files and their attributes</li>
+      <li>Data provanence and metadata</li>
+      <li>Commonly used Python libraries in the AMOS sciences</li>
+      <li><a href="http://nbviewer.ipython.org/gist/DamienIrving/89d9777bf1c827b355e0">Reference...</a></li>
     </ul>
   </div>
 </div>
